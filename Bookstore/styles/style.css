@@ -1,0 +1,159 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0a0a0a;
+    color: #dcdcdc;
+}
+
+header {
+    background: linear-gradient(90deg, #003366, #00cc66);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 204, 102, 0.5);
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    color: #00cc66;
+    transform: scale(1.1);
+}
+
+.intro, .book-list, .contact-form {
+    text-align: center;
+    padding: 60px;
+}
+
+.book-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.book {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 220px;
+    box-shadow: 0px 5px 15px rgba(0, 204, 102, 0.3);
+}
+
+.book img {
+    width: 120px;
+    height: 180px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.book:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(0, 102, 255, 0.5);
+}
+
+.book img:hover {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+.contact-form {
+    max-width: 450px;
+    margin: 0 auto;
+    background: #121212;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 102, 255, 0.3);
+}
+
+.contact-form input, .contact-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid #003366;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #222;
+    color: #fff;
+    transition: border-color 0.3s;
+}
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #00cc66;
+    outline: none;
+}
+
+.contact-form button {
+    background: #003366;
+    color: #fff;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background: #00cc66;
+    transform: scale(1.05);
+    color: #0a0a0a;
+    font-weight: bold;
+}
+
+footer {
+    background: #080808;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .book-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book {
+        width: 90%;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
