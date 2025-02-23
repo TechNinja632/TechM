@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<web-app>  
+<servlet>  
+<servlet-name>showPage</servlet-name>  
+<servlet-class>ShowHtml</servlet-class>  
+</servlet>  
+<servlet-mapping>  
+<servlet-name>showPage</servlet-name>  
+<url-pattern>/show</url-pattern>  
+</servlet-mapping>  
+</web-app>  
