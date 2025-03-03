@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News | Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Daily News</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="entertainment.html">Entertainment</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search articles...">
+                <button id="search-btn">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="featured-slider">
+        <div class="container">
+            <div class="slider" id="slider">
+                <div class="slide active">
+                    <img src="https://images.unsplash.com/photo-1570101945621-945409a6370f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured News 1">
+                    <div class="slide-content">
+                        <span class="category">Technology</span>
+                        <h2>New Smartphone Models Set to Release Next Month</h2>
+                        <p>Leading tech companies announce exciting features in upcoming models.</p>
+                        <a href="article.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured News 2">
+                    <div class="slide-content">
+                        <span class="category">Sports</span>
+                        <h2>Local Team Wins Championship After Dramatic Final</h2>
+                        <p>An incredible comeback in the final minutes secured the trophy.</p>
+                        <a href="article.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26" alt="Featured News 3">
+                    <div class="slide-content">
+                        <span class="category">Entertainment</span>
+                        <h2>Film Festival Announces This Year's Lineup</h2>
+                        <p>Several acclaimed directors and actors set to premiere new works.</p>
+                        <a href="article.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="slider-dot active" data-slide="0"></button>
+                <button class="slider-dot" data-slide="1"></button>
+                <button class="slider-dot" data-slide="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="latest-news">
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="News 1">
+                    <div class="news-content">
+                        <span class="category">Technology</span>
+                        <h3>AI Developments Change How We Work</h3>
+                        <p>New AI tools are revolutionizing productivity across industries.</p>
+                        <a href="article.html">Read More</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e" alt="News 2">
+                    <div class="news-content">
+                        <span class="category">Sports</span>
+                        <h3>Player Breaks Record in Season Opener</h3>
+                        <p>Fans were amazed as the star athlete surpassed expectations.</p>
+                        <a href="article.html">Read More</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728" alt="News 3">
+                    <div class="news-content">
+                        <span class="category">Entertainment</span>
+                        <h3>New Music Album Tops Charts Worldwide</h3>
+                        <p>Critics praise the innovative sound and meaningful lyrics.</p>
+                        <a href="article.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories-tabs">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" data-category="all">All</button>
+                <button class="tab-btn" data-category="technology">Technology</button>
+                <button class="tab-btn" data-category="sports">Sports</button>
+                <button class="tab-btn" data-category="entertainment">Entertainment</button>
+            </div>
+            <div class="tab-content" id="all">
+                <div class="news-grid">
+                    <div class="news-card">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa" alt="News 4">
+                        <div class="news-content">
+                            <span class="category">Technology</span>
+                            <h3>Cloud Computing Shapes Future Business</h3>
+                            <p>Companies increasingly rely on cloud solutions for growth.</p>
+                            <a href="article.html">Read More</a>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc" alt="News 5">
+                        <div class="news-content">
+                            <span class="category">Sports</span>
+                            <h3>Team Announces New Coach for Season</h3>
+                            <p>Fans excited about the strategic direction under new leadership.</p>
+                            <a href="article.html">Read More</a>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b" alt="News 6">
+                        <div class="news-content">
+                            <span class="category">Entertainment</span>
+                            <h3>Streaming Service Announces New Series</h3>
+                            <p>The highly anticipated show features award-winning cast.</p>
+                            <a href="article.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Daily News</h2>
+                    <p>Your source for the latest news and updates</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="sports.html">Sports</a></li>
+                        <li><a href="entertainment.html">Entertainment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">TW</a>
+                        <a href="#" class="social-icon">IG</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Daily News. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
