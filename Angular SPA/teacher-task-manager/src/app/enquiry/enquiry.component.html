@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Enquiries</h2>
+      <div *ngFor="let enquiry of enquiries" class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">{{ enquiry.task }}</h5>
+          <p class="card-text">Student: {{ enquiry.student }}</p>
+          <p class="card-text">Message: {{ enquiry.message }}</p>
+          <p class="card-text">Status: {{ enquiry.status }}</p>
+          <div *ngIf="isTeacher">
+            <textarea
+              class="form-control"
+              [(ngModel)]="enquiry.reply"
+            ></textarea>
+            <button
+              class="btn btn-primary mt-2"
+              (click)="replyEnquiry(enquiry.id, enquiry.reply)"
+            >
+              Reply
+            </button>
+            <button
+              class="btn btn-danger mt-2"
+              (click)="deleteEnquiry(enquiry.id, $event)"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4" *ngIf="!isTeacher">
+      <h2>New Enquiry</h2>
+      <div class="form-group">
+        <label for="task">Select Task</label>
+        <select
+          id="task"
+          class="form-control"
+          [(ngModel)]="selectedTask"
+          name="task"
+        >
+          <option *ngFor="let task of tasks" [value]="task.title">
+            {{ task.title }}
+          </option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          class="form-control"
+          [(ngModel)]="newEnquiry"
+          name="message"
+        ></textarea>
+      </div>
+      <button class="btn btn-primary mt-2" (click)="sendEnquiry()">Send</button>
+    </div>
+  </div>
+</div>

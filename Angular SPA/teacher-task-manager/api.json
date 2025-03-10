@@ -1,0 +1,18 @@
+{
+  "tasks": [
+    {
+      "id": "672c",
+      "title": "Angular SPA",
+      "assignedDate": "2025-03-09",
+      "status": "Submission Pending",
+      "student": "Praveen"
+    },
+    {
+      "id": "a1fa",
+      "title": "React Application",
+      "assignedDate": "2025-03-10",
+      "status": "Submission Pending",
+      "student": "Suban"
+    }
+  ]
+}

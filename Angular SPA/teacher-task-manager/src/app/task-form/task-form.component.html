@@ -1,0 +1,26 @@
+<form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" formControlName="title" />
+  </div>
+  <div class="form-group">
+    <label>Assigned Date</label>
+    <input type="date" class="form-control" formControlName="assignedDate" />
+  </div>
+  <div class="form-group">
+    <label>Status</label>
+    <select class="form-control" formControlName="status">
+      <option value="Submission Pending">Submission Pending</option>
+      <option value="In Progress">In Progress</option>
+      <option value="Completed">Completed</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Student</label>
+    <input type="text" class="form-control" formControlName="student" />
+  </div>
+  <button type="submit" class="btn btn-primary">Add Task</button>
+  <button type="button" class="btn btn-secondary" (click)="onCancel()">
+    Cancel
+  </button>
+</form>

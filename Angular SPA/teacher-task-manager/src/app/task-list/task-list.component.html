@@ -1,0 +1,34 @@
+<div class="row mb-3">
+  <div class="col-md-4">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Filter by status"
+      [(ngModel)]="filterStatus"
+    />
+  </div>
+  <div class="col-md-2">
+    <button class="btn btn-secondary" (click)="clearFilter()">
+      Clear Filter
+    </button>
+  </div>
+  <div class="col-md-2" *ngIf="isTeacher">
+    <button class="btn btn-primary" (click)="navigateToAddTask()">
+      Add Task
+    </button>
+  </div>
+</div>
+<div class="row" *ngIf="tasks.length > 0; else noTasks">
+  <div
+    class="col-md-4"
+    *ngFor="let task of tasks | statusFilter : filterStatus"
+  >
+    <app-task-card
+      [task]="task"
+      (taskDeleted)="onTaskDeleted($event)"
+    ></app-task-card>
+  </div>
+</div>
+<ng-template #noTasks>
+  <div class="alert alert-info" role="alert">No tasks found.</div>
+</ng-template>
