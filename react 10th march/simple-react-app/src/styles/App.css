@@ -1,0 +1,66 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+.App {
+  text-align: left;
+  padding: 20px;
+}
+
+.parent-component,
+.child-component {
+  margin: 20px;
+  padding: 20px;
+  border: 2px dashed #6c757d;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+h2,
+h3 {
+  color: #495057;
+}
+
+/* Add styles for form labels and inputs */
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #6c757d;
+  border-radius: 8px;
+}
+
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.text-danger {
+  color: #dc3545;
+}
+
+.btn-primary {
+  background-color: #17a2b8;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #138496;
+}
