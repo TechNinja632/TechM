@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "509637481681",
+    "firebase_url": "https://stockmarketapp-cdd95-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "stockmarketapp-cdd95",
+    "storage_bucket": "stockmarketapp-cdd95.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509637481681:android:c6ac15f9b20101b6a021f0",
+        "android_client_info": {
+          "package_name": "com.example.stocks_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrj4oGEnE4UqFP0LHpk-LqNVYpALtHjQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
