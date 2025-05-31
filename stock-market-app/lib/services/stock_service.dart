@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class StockService {
-  final String apiKey = 'U1GS8NF3AQ51MIC0';
+  final String apiKey = 'ALPHAVANTAGE_API_KEY';
 
   Future<Map<String, dynamic>> fetchStockData(String symbol) async {
     final url =
